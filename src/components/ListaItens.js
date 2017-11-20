@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
-  ScrollView
+  	ScrollView,
+	StyleSheet
 } from 'react-native';
 import axios from 'axios';
 import Itens from './Itens';
@@ -22,12 +23,17 @@ class ListaItens extends Component {
 
 	render() {
 		return (
-			<ScrollView>
+			<ScrollView style={styles.fundo}>
 				{ this.state.listaItens.map(item =>  (<Itens key={item.titulo} item={item} />))}
 			</ScrollView>
 		);
 	}
 }
+const styles = StyleSheet.create ({
+	fundo: {
+		backgroundColor: '#DDD'
+	}
+})
 
 export default ListaItens;
 
