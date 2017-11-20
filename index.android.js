@@ -13,5 +13,4 @@ export default class CatalogoDeProdutos extends Component {
   }
 }
 
-
-AppRegistry.registerComponent('CatalogoDeProdutos', () => CatalogoDeProdutos);
+AppRegistry.registerComponent('catalogoDeProdutos', () => CatalogoDeProdutos);
